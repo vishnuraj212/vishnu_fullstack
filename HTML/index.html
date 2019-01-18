@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>HTML USING EMMET</title>
-  
+  <script src="./form.js"></script>
 </head>
 <body >
         <nav class="navbar navbar-default">
@@ -29,52 +29,57 @@
       </nav>
     <h1>LOGIN HERE</h1>
     
-    <table   >
-        <tr>
-            <td>
-                Name
-            </td>
-            <td>
-                    <input type="text" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Roll no </td>
-            <td>
-            <input type="text" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Class
-            </td>
-            <td>
-                        <select class="form-control">
-                            <option value="null">...</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-            </td>
-        </tr>
+    <form>
+        <table   >
             <tr>
                 <td>
-
+                    Name
                 </td>
-                <td >
-                    <button class="btn btn-success">SUBMIT</button>
-                   
+                <td>
+                        <input type="text" id="name" class="form-control"/>
                 </td>
             </tr>
             <tr>
                 <td>
-
-                </td>
+                    Roll no </td>
                 <td>
-                    <a href="./Register.html" class="form-control">Go To Register Page </a>
+                <input type="text" id="rollno" class="form-control"  pattern="[6789]{1}[0-9]{9}" required/>
                 </td>
             </tr>
-    </table>
+            <tr>
+                <td>
+                    Class
+                </td>
+                <td>
+                            <select class="form-control" id="opvalue">
+                                <option value="null">...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+    
+                    </td>
+                    <td >
+                        <button type="submit" class="btn btn-success" onclick="Readme();">SUBMIT</button>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+    
+                    </td>
+                    <td>
+                        <a href="./Register.html" >Go To Register Page </a>
+                    </td>
+                </tr>
+                <tr>
+                    <p id="display"></p>
+                </tr>
+        </table>
+    </form>
 </body>
 </html>
