@@ -1,0 +1,16 @@
+print ("hi")
+print ("this message")
+print ("is printed")
+
+print ("Using Vs code IDE")
+
+print("jhony Jhony ")
+print("yes papa")
+print("Eating Sugar?")
+#print("Yes papa")
+print("No papa")
+print("Telling lies?")
+#print("Yes papa")
+print("no papa")
+print("Open your mouth")
+print("hahaa haaaa!!!!!")
