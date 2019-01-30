@@ -6,11 +6,15 @@ app.get("/",function(req,res)
 {
     res.sendFile(__dirname+"/login.html")
 })
-
+app.get("/home",function(req,res)
+{
+    res.sendFile(__dirname+"/home.html")
+})
 app.post("/home",function(req,res)
 {
 if(req.body.username=='admin'&&req.body.password=="admin")
 {
+    
     res.sendFile(__dirname+"/home.html")
 }
 else
@@ -24,7 +28,9 @@ app.get("/signup",function(req,res)
 })
 app.post("/display",function(req,res)
 {
-    res.send(req.body.username)
+    res.send("<html><body><h1>Signup details<br/></h1>User Name:"+req.body.username+"<br/>password:"+req.body.password+"<br/><a href='/'>Go to login</a></body></html")
+    
+    
 })
 app.listen(8001,function(req,res)
 {
