@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/insert" method="POST">
+   <h1>Home page</h1> 
+   <table>
+       <tr>
+           <td>
+               Book Id:
+           </td>
+           <td>
+               <input type="text" name="bookid">
+           </td>
+       </tr>
+       <tr>
+           <td>
+               Book Name
+           </td>
+           <td>
+               <input type="text" name="bookname">
+           </td>
+       </tr>
+       <tr>
+           <td>
+               Author
+           </td>
+           <td>
+               <input type="text" name="author">
+           </td>
+       </tr>
+   </table>
+
+   <button type="submit">Insert</button>
+   
+</form>
+<form method="POST" action="/delete">
+    <input type="text" name="dbookid">
+        <button type="submit">Delete</button>
+
+</form>
+<form action="/edit" method="POST">
+         <input type="text" name="dbookid">
+        <button type="submit">Update</button>
+</form>
+
+<form method="POST" action="/view">
+    <input type="text" name="dbookid">
+        <button type="submit">View</button>
+</form>
+   
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="samplefile">
+        <button type="submit">Upload</button>
+</form>
+ <a href="/login">Login</a>
+</body>
+</html>

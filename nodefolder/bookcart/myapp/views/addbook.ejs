@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/bookentry" enctype="multipart/form-data">
+    <h1>
+        BOOK PAGE
+    </h1>
+    <table>
+        <tr>
+            <td>
+                Enter Book ID:
+            </td>
+            <td>
+                <input type="text" name="bookid"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter book Name
+            </td>
+            <td>
+                <input type="text" name="bookname"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter Author Name
+            </td>
+            <td>
+                <input type="text" name="author"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter book Price
+            </td>
+            <td>
+                <input type="text" name="price"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="file" name="samplefile"/>
+                
+            </td>
+            <td>
+                <button type="submit">SUBMIT BOOK DETAILS</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
